@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BlueJelly</title>
+</head>
+<body>
+<div id="text1">Hello, BlueJelly!</div>
+<button id="button1">ボタン</button>
+<script>
+//Global
+console.log("Global");
+document.getElementById("text1").innerHTML = "BLE";
+
+//onLoad
+window.onload = function(){
+  console.log("Load");
+  document.getElementById("text1").innerHTML = "ロードされたよ";
+}
+
+//ClickEvent
+document.getElementById("button1").addEventListener("click", function(){
+  console.log("Click");
+  document.getElementById("text1").innerHTML = "クリックされたよ";
+});
+</script>
+</body>
+</html>
